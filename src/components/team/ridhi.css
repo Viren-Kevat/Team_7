@@ -55,6 +55,13 @@
   background-color: #1c1b1bba;
   color: #fff;
 }
+.css-1e8ksxa {
+  height: 8rem;
+  margin: 2rem;
+  background-color: #1c1b1bba;
+  color: #fff;
+  width: 30rem;
+}
 
 /* Responsive Styles */
 @media (max-width: 1200px) {

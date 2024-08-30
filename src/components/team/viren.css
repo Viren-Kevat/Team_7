@@ -35,7 +35,6 @@
 
 .contentv {
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
   padding: 1rem;
@@ -49,6 +48,13 @@
   width: 30rem;
   background-color: #1c1b1bba;
   color: #fff;
+}
+.css-1e8ksxa {
+  height: 8rem;
+  margin: 2rem;
+  background-color: #1c1b1bba;
+  color: #fff;
+  width: 30rem;
 }
 
 /* Responsive Styles */
