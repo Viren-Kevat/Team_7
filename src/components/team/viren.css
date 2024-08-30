@@ -104,4 +104,8 @@
     width: 100%; /* Full width for better fit */
     margin: 0.5rem 0; /* Adjust margin */
   }
+  .contentv2 > .css-1e8ksxa {
+    width: 23rem;
+    height: auto;
+  }
 }
