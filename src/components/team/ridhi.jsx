@@ -35,7 +35,7 @@ const ridhi =()=>{
                 
                 <Minicard 
                     symb={<CodeIcon  sx={{fontSize:{
-                        xs: '2rem', // For extra-small devices (phones)
+                        xs: '60px', // For extra-small devices (phones)
                         sm: '2rem',   // For small devices (tablets)
                         md: '2.5rem'  // For medium devices and up (desktops)
                         }
@@ -45,7 +45,7 @@ const ridhi =()=>{
                 />
                   <Minicard 
                     symb={<LaptopMacIcon  sx={{ fontSize:{
-                        xs: '2rem', // For extra-small devices (phones)
+                        xs: '60px', // For extra-small devices (phones)
                         sm: '2rem',   // For small devices (tablets)
                         md: '2.5rem'  // For medium devices and up (desktops)
                         }

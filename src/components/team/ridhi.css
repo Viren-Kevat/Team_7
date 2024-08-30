@@ -108,6 +108,7 @@
   .contentR2 > .css-o7wx12-MuiPaper-root-MuiCard-root {
     width: 100%; /* Full width for better fit */
     margin: 0.5rem 0; /* Adjust margins */
+    height: auto;
   }
   .css-ms0sx7-MuiCardMedia-root {
     width: 30%;
