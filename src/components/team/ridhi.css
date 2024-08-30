@@ -41,13 +41,6 @@
   color: #fff;
 }
 
-.contentR2 {
-  display: flex;
-  flex-wrap: wrap; /* Ensure items wrap on smaller screens */
-  justify-content: space-evenly;
-  padding: 1rem;
-}
-
 .contentR2 > .css-o7wx12-MuiPaper-root-MuiCard-root {
   height: 8rem;
   margin: 2rem;
