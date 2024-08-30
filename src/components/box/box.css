@@ -1,0 +1,27 @@
+.bx {
+  width: 100%;
+  height: 100%;
+  margin: 0.2rem;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0 2rem;
+}
+
+/* Tablet (landscape) */
+@media (max-width: 768px) {
+  .bx {
+    padding: 0 1rem;
+    margin: 0.15rem; /* Adjust margin slightly for better spacing */
+  }
+}
+
+/* Mobile (portrait) */
+@media (max-width: 480px) {
+  .bx {
+    padding: 0 0.5rem;
+    margin: 0.1rem; /* Keep margin minimal for smaller screens */
+    background-size: contain; /* Ensure the background image is fully visible */
+  }
+}

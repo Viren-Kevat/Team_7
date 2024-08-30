@@ -1,0 +1,115 @@
+/* Hero Section */
+.heror {
+  height: 40rem;
+  margin: 2rem;
+  position: relative;
+  background-image: url(../../img/ridhi.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgb(0, 0, 0);
+  display: flex;
+  align-items: flex-end; /* Changed to flex-end to align content at the bottom */
+}
+
+.heror::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.626);
+  pointer-events: none;
+}
+
+.textcontainerr {
+  width: 45%;
+  position: relative;
+  z-index: 1;
+  background: rgba(192, 192, 192, 0.509);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.contentR {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.contentR2 {
+  display: flex;
+  flex-wrap: wrap; /* Ensure items wrap on smaller screens */
+  justify-content: space-evenly;
+  padding: 1rem;
+}
+
+.contentR2 > .css-o7wx12-MuiPaper-root-MuiCard-root {
+  height: 8rem;
+  margin: 2rem;
+  width: 30rem;
+  background-color: #1c1b1bba;
+  color: #fff;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .heror {
+    height: 30rem; /* Adjust height for smaller screens */
+  }
+
+  .textcontainerr {
+    width: 60%; /* Increase width to fit smaller screens */
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .heror {
+    height: 25rem; /* Further reduce height */
+    margin: 1rem; /* Adjust margins */
+  }
+
+  .textcontainerr {
+    width: 80%; /* Adjust width for better fit */
+    padding: 0.5rem;
+  }
+
+  .contentR {
+    padding: 0.5rem;
+    flex-direction: column; /* Stack items vertically */
+  }
+
+  .contentR2 {
+    flex-direction: column; /* Stack items vertically */
+    width: 100%; /* Full width for better fit */
+  }
+}
+
+@media (max-width: 480px) {
+  .heror {
+    height: 35rem; /* Further reduce height */
+    margin: 0.5rem; /* Adjust margins */
+  }
+
+  .textcontainerr {
+    width: 90%; /* Fit more comfortably */
+    padding: 0.5rem;
+  }
+  .contentR,
+  .contentR2 {
+    padding: 0.5rem;
+  }
+
+  .contentR2 > .css-o7wx12-MuiPaper-root-MuiCard-root {
+    width: 100%; /* Full width for better fit */
+    margin: 0.5rem 0; /* Adjust margins */
+  }
+  .css-ms0sx7-MuiCardMedia-root {
+    width: 30%;
+  }
+}

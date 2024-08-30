@@ -1,0 +1,86 @@
+/* Header */
+header {
+  position: relative;
+  background-color: #1c1b1bba;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  z-index: 2;
+}
+
+/* Navigation Links */
+nav a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+}
+
+/* Product List */
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* Product and Cart Item Styles */
+.product,
+.cart-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  width: 200px;
+  text-align: center;
+}
+
+/* Buttons */
+button {
+  background-color: #61dafb;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* Responsive Styles for Mobile */
+@media (max-width: 768px) {
+  nav a {
+    margin: 0 10px; /* Reduce spacing between nav links on smaller screens */
+  }
+
+  .product-list {
+    flex-direction: column; /* Stack products vertically */
+    align-items: center; /* Center-align products */
+  }
+
+  .product,
+  .cart-item {
+    width: 90%; /* Take up most of the width on mobile */
+    margin: 10px 0; /* Adjust margin for better spacing */
+  }
+
+  button {
+    width: 100%; /* Make buttons full-width on mobile */
+    padding: 10px; /* Increase padding for better touch targets */
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 15px; /* Increase padding for smaller screens */
+  }
+
+  nav a {
+    display: block; /* Stack nav links vertically */
+    margin: 10px 0; /* Add spacing between stacked links */
+  }
+
+  .product,
+  .cart-item {
+    width: 100%; /* Full-width on very small screens */
+    margin: 5px 0; /* Reduce margin for better fit */
+  }
+
+  button {
+    padding: 15px; /* Further increase padding for touch targets */
+    font-size: 1.2rem; /* Increase font size for readability */
+  }
+}

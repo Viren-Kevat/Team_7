@@ -1,0 +1,101 @@
+/* Hero Section */
+.herov {
+  height: 40rem;
+  margin: 2rem;
+  position: relative;
+  background-image: url(../../img/viren.JPG);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgb(0, 0, 0);
+  display: flex;
+  align-items: end;
+}
+
+.herov::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.626);
+  pointer-events: none;
+}
+
+.textcontainerv {
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  background: rgba(8, 8, 8, 0.6);
+  padding: 1rem;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.contentv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.contentv2 > .css-o7wx12-MuiPaper-root-MuiCard-root {
+  height: 8rem;
+  margin: 2rem;
+  width: 30rem;
+  background-color: #1c1b1bba;
+  color: #fff;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .herov {
+    height: 30rem; /* Reduce height for smaller screens */
+    margin: 1rem; /* Adjust margin */
+    background-position: center; /* Center background image */
+  }
+}
+
+@media (max-width: 768px) {
+  .herov {
+    height: 25rem; /* Further reduce height */
+    margin: 0.5rem; /* Adjust margin */
+  }
+
+  .textcontainerv {
+    padding: 0.5rem; /* Reduce padding for better fit */
+  }
+
+  .contentv {
+    padding: 0.5rem;
+    flex-direction: column; /* Stack items vertically */
+  }
+
+  .contentv2 > .css-o7wx12-MuiPaper-root-MuiCard-root {
+    height: auto; /* Allow height to adjust based on content */
+    width: 100%; /* Full width for better fit */
+    margin: 0.5rem 0; /* Adjust margin */
+  }
+}
+
+@media (max-width: 480px) {
+  .herov {
+    height: 45rem; /* Further reduce height */
+    margin: 0.5rem; /* Adjust margin */
+    background-position-x: -6rem;
+  }
+
+  .textcontainerv {
+    padding: 0.5rem; /* Reduce padding */
+  }
+
+  .contentv2 > .css-o7wx12-MuiPaper-root-MuiCard-root {
+    height: auto; /* Allow height to adjust based on content */
+    width: 100%; /* Full width for better fit */
+    margin: 0.5rem 0; /* Adjust margin */
+  }
+}

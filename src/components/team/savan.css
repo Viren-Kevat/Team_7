@@ -1,0 +1,131 @@
+/* Hero Section */
+.hero {
+  height: 40rem;
+  margin: 2rem;
+  position: relative;
+  background-image: url(../../img/savan.jpg);
+  background-position-y: -60rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgb(0, 0, 0);
+  display: flex;
+  align-items: end;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.626);
+  pointer-events: none;
+}
+
+.textcontainers {
+  width: 45%;
+  position: relative;
+  z-index: 1;
+  background: rgba(192, 192, 192, 0.509);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.contents {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.contents2 > .css-o7wx12-MuiPaper-root-MuiCard-root {
+  height: 8rem;
+  margin: 2rem;
+  width: 30rem;
+  background-color: #1c1b1bba;
+  color: #fff;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .hero {
+    height: 30rem; /* Reduce height for smaller screens */
+    margin: 1rem; /* Adjust margins */
+    background-position-y: center; /* Center background image */
+  }
+
+  .textcontainers {
+    width: 60%; /* Increase width to fit smaller screens */
+    padding: 1rem; /* Adjust padding */
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 25rem; /* Further reduce height */
+    margin: 0.5rem; /* Adjust margins */
+  }
+
+  .textcontainers {
+    width: 80%; /* Adjust width for better fit */
+    padding: 0.5rem; /* Reduce padding */
+  }
+
+  .contents {
+    padding: 0.5rem;
+    flex-direction: column; /* Stack items vertically */
+  }
+
+  .contents2 > .css-1m16crb-MuiPaper-root-MuiCard-root {
+    height: auto; /* Allow height to adjust based on content */
+    width: 100%; /* Full width for better fit */
+    margin: 0.5rem 0; /* Adjust margins */
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    height: 35rem; /* Further reduce height */
+    margin: 0.5rem; /* Adjust margins */
+    background-position-y: -14rem;
+  }
+
+  .textcontainers {
+    width: 100%; /* Fit more comfortably */
+    padding: 0.5rem; /* Reduce padding */
+  }
+
+  .contents {
+    /* padding: 0.5rem; */
+    flex-direction: column; /* Stack items vertically */
+  }
+  .contents2 > .css-o7wx12-MuiPaper-root-MuiCard-root {
+    height: 10rem;
+    margin: 0.5rem;
+    width: 22rem;
+    background-color: #1c1b1bba;
+    color: #fff;
+  }
+  .contents2 > .css-1m16crb-MuiPaper-root-MuiCard-root {
+    height: auto; /* Allow height to adjust based on content */
+    width: 100%; /* Full width for better fit */
+    margin: 0.5rem 0; /*Adjust margins*/
+  }
+  .contents2 > h5 {
+    font-size: 0.8rem;
+  }
+  .contents2 > span {
+    font-size: 0.8rem;
+  }
+}

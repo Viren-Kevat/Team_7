@@ -1,0 +1,121 @@
+#root {
+  max-width: 1800px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+.header {
+  position: relative;
+  z-index: 5;
+}
+.basebx2 {
+  height: 15rem;
+  margin: 0.5rem;
+  text-align: end;
+  display: flex;
+  align-items: center; /* Align items vertically */
+  justify-content: flex-end; /* Align items to the end horizontally */
+}
+
+/* For products page */
+.mainp,
+.mainp2 {
+  display: flex;
+  justify-content: space-evenly;
+  height: 20rem;
+  margin: 0.5rem;
+  text-align: end;
+}
+.mainservice {
+  margin: 3rem 0 3rem 0;
+  z-index: 5;
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  #root {
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  .basebx2 {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+
+  .mainp,
+  .mainp2 {
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    text-align: center;
+    margin: 0.5rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  #root {
+    padding: 0.5rem;
+  }
+
+  .basebx2 {
+    margin: 0.25rem;
+  }
+  .mainservice {
+    display: flex;
+  }
+  .mainp,
+  .mainp2 {
+    margin: 0.25rem 0;
+  }
+}
+
+:root {
+  --background-color: #060606;
+  --text-color: #ffffff;
+  --primary-accent: #405dd3;
+  --secondary-accent: #646cff;
+  --hover-accent: #17171a;
+  --light-background: #f9f9f9;
+  --dark-background: #1a1a1a;
+  --border-color: #ccc;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+button {
+  background-color: var(--primary-accent);
+  border: 1px solid transparent;
+}
+
+button:hover {
+  background-color: var(--hover-accent);
+}
+
+a {
+  color: var(--text-color);
+}
+
+a:hover {
+  color: var(--light-background);
+}
+
+.product,
+.cart-item {
+  border: 1px solid var(--border-color);
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: var(--light-background);
+    color: #213547;
+  }
+
+  button {
+    background-color: var(--light-background);
+  }
+}
