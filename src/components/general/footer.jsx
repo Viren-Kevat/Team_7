@@ -1,8 +1,8 @@
 import React from "react";
 import { Box, Typography, Grid, IconButton } from "@mui/material";
-import { Facebook, Twitter, Instagram, LinkedIn } from "@mui/icons-material";
+import { Facebook, Instagram, LinkedIn } from "@mui/icons-material";
 import { Link } from 'react-router-dom';
-
+import XIcon from '@mui/icons-material/X';
 const Footer = () => {
   return (
     <Box sx={{ backgroundColor: "#1c1b1bba", color: "#fff", p: { xs: 2, sm: 4 } }}>
@@ -51,7 +51,7 @@ const Footer = () => {
               <Facebook />
             </IconButton>
             <IconButton href="https://x.com/viren0210" sx={{ color: "#fff" }}>
-              <Twitter />
+              <XIcon />
             </IconButton>
             <IconButton href="https://www.instagram.com/_http.viren/" sx={{ color: "#fff" }}>
               <Instagram />
