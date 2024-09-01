@@ -22,7 +22,7 @@ const signIn = () => {
   return (
     <div className="sign-in-container">
       <h2 className="sign-in-title">Sign In</h2>
-      <form onSubmit={handleSubmit} className="sign-in-form">
+      <form onSubmit={handleSubmit} className="sign-in-form" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
         <div className="form-group">
           <label htmlFor="email">Email:</label>
           <input
@@ -49,6 +49,7 @@ const signIn = () => {
           />
         </div>
         <button type="submit" className="sign-in-button">Sign In</button>
+        <input type="hidden" name="sign-in-form" value="contact" />
       </form>
     </div>
   );
