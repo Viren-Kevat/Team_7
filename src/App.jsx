@@ -1,6 +1,6 @@
 import React, { useState} from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import {Box,Mainbox,Mainservice,AboutUs,Ridhi,Savan,Viren,Base,Cart,Footer,Header,Hero,ContactUs,SignIn,ScrollTop} from "./components"
+import {Box,Mainbox,Mainservice,AboutUs,Ridhi,Savan,Viren,Base,Cart,Footer,Header,Hero,ContactUs,SignIn,ScrollTop,EasterEgg} from "./components"
 import Productsection from './productsection.jsx';
 import Brands from "./img/famous_brands_3.jpeg"
 import State from './state.jsx';
@@ -71,6 +71,8 @@ function App() {
                     p={"25% off"}
                     src={Brands}/>
             </div>
+            <EasterEgg/>
+            {/* <Sequence/> */}
             <Footer/>
           </>
           }
@@ -82,6 +84,8 @@ function App() {
             <>
             <Productsection products={products} addToCart={addToCart}/>
             <Footer/>
+            <EasterEgg/>
+            {/* <Sequence/> */}
             </>
           }
         />
@@ -91,6 +95,8 @@ function App() {
             <>
               <AboutUs/>
               <Footer/>
+              <EasterEgg/>
+              {/* <Sequence/> */}
             </>
           }
         />
@@ -100,6 +106,8 @@ function App() {
           <>
           <Cart cartItems={cart} removeFromCart={removeFromCart} />
           <Footer/>
+          <EasterEgg/>
+          {/* <Sequence/> */}
           </>
           }
         />
@@ -109,6 +117,8 @@ function App() {
           <>
           <ContactUs/>
           <Footer/>
+          <EasterEgg/>
+          {/* <Sequence/> */}
           </>
           }
         />
@@ -118,6 +128,8 @@ function App() {
           <>
           <SignIn/>
           <Footer/>
+          <EasterEgg/>
+          {/* <Sequence/> */}
           </>
           }
         />
@@ -128,6 +140,8 @@ function App() {
           <>
           <Viren/>
           <Footer/>
+          <EasterEgg/>
+          {/* <Sequence/> */}
           </>
           }
           />
@@ -137,6 +151,8 @@ function App() {
           <>
           <Ridhi/>
           <Footer/>
+          <EasterEgg/>
+          {/* <Sequence/> */}
           </>
           }
           />
@@ -146,6 +162,8 @@ function App() {
           <>
           <Savan/>
           <Footer/>
+          <EasterEgg/>
+          {/* <Sequence/> */}
           </>
           }
           />

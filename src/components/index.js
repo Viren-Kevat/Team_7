@@ -18,3 +18,4 @@ export { default as Product } from "./general/Product_list.jsx";
 export { default as SignIn } from "./about/signin.jsx";
 export { default as ContactUs } from "./about/contactus.jsx";
 export { default as ScrollTop } from "./general/scrolltop.jsx";
+export { default as EasterEgg } from "./easter_egg/easter_egg.jsx";
