@@ -1,5 +1,3 @@
-/* ProductList.css */
-
 .product-list {
   display: flex;
   flex-wrap: wrap;
@@ -9,14 +7,14 @@
 }
 
 .product {
-  flex: 1 1 calc(33.333% - 2rem); /* Three items per row with spacing */
+  flex: 1 1 calc(33.333% - 2rem);
   box-sizing: border-box;
   border: 1px solid #ddd;
   border-radius: 8px;
   background-color: #1c1b1bba;
   padding: 1rem;
   text-align: center;
-  max-width: 300px; /* Ensures consistency in size */
+  max-width: 300px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -41,17 +39,15 @@
   background-color: #0056b3;
 }
 
-/* Responsive styles */
-
 @media (max-width: 768px) {
   .product {
-    flex: 1 1 calc(50% - 1rem); /* Two items per row on tablets */
+    flex: 1 1 calc(50% - 1rem);
   }
 }
 
 @media (max-width: 480px) {
   .product {
-    flex: 1 1 100%; /* One item per row on small screens */
-    margin: 0.5rem 0; /* Adjust spacing for small screens */
+    flex: 1 1 100%;
+    margin: 0.5rem 0;
   }
 }

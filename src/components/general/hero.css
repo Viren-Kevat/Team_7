@@ -62,7 +62,6 @@
   background-color: #0056b3;
 }
 
-/* Media Queries for Mobile Devices */
 @media (max-width: 768px) {
   .hero-section {
     height: 30rem;

@@ -32,7 +32,6 @@
   color: black;
 }
 
-/* Tablet (landscape) */
 @media (max-width: 768px) {
   .part1,
   .mainbxdiv {
@@ -65,7 +64,6 @@
   }
 }
 
-/* Mobile (portrait) */
 @media (max-width: 480px) {
   .part1 {
     font-size: 1rem;

@@ -1,4 +1,3 @@
-/* Hero Section */
 .herov {
   height: 40rem;
   margin: 2rem;
@@ -57,52 +56,51 @@
   width: 30rem;
 }
 
-/* Responsive Styles */
 @media (max-width: 1200px) {
   .herov {
-    height: 30rem; /* Reduce height for smaller screens */
-    margin: 1rem; /* Adjust margin */
-    background-position: center; /* Center background image */
+    height: 30rem;
+    margin: 1rem;
+    background-position: center;
   }
 }
 
 @media (max-width: 768px) {
   .herov {
-    height: 25rem; /* Further reduce height */
-    margin: 0.5rem; /* Adjust margin */
+    height: 25rem;
+    margin: 0.5rem;
   }
 
   .textcontainerv {
-    padding: 0.5rem; /* Reduce padding for better fit */
+    padding: 0.5rem;
   }
 
   .contentv {
     padding: 0.5rem;
-    flex-direction: column; /* Stack items vertically */
+    flex-direction: column;
   }
 
   .contentv2 > .css-o7wx12-MuiPaper-root-MuiCard-root {
-    height: auto; /* Allow height to adjust based on content */
-    width: 100%; /* Full width for better fit */
-    margin: 0.5rem 0; /* Adjust margin */
+    height: auto;
+    width: 100%;
+    margin: 0.5rem 0;
   }
 }
 
 @media (max-width: 480px) {
   .herov {
-    height: 45rem; /* Further reduce height */
-    margin: 0.5rem; /* Adjust margin */
+    height: 45rem;
+    margin: 0.5rem;
     background-position-x: -6rem;
   }
 
   .textcontainerv {
-    padding: 0.5rem; /* Reduce padding */
+    padding: 0.5rem;
   }
 
   .contentv2 > .css-o7wx12-MuiPaper-root-MuiCard-root {
-    height: auto; /* Allow height to adjust based on content */
-    width: 100%; /* Full width for better fit */
-    margin: 0.5rem 0; /* Adjust margin */
+    height: auto;
+    width: 100%;
+    margin: 0.5rem 0;
   }
   .contentv2 > .css-1e8ksxa {
     width: 23rem;

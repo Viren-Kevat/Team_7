@@ -25,18 +25,18 @@ a:hover {
 body {
   margin: 0;
   display: flex;
-  flex-direction: column; /* Adjust to column layout for mobile */
-  align-items: center; /* Center content horizontally */
-  justify-content: center; /* Center content vertically */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   min-width: 320px;
   min-height: 100vh;
-  padding: 1rem; /* Add padding for better spacing on mobile */
+  padding: 1rem;
 }
 
 h1 {
-  font-size: 2.5em; /* Decreased font size for mobile */
+  font-size: 2.5em;
   line-height: 1.1;
-  text-align: center; /* Center the heading on mobile */
+  text-align: center;
 }
 
 button {
@@ -71,29 +71,28 @@ button:focus-visible {
   }
 }
 
-/* Responsive styles for mobile */
 @media (max-width: 768px) {
   h1 {
-    font-size: 2em; /* Further decrease the font size for smaller screens */
+    font-size: 2em;
   }
 
   button {
-    padding: 0.5em 1em; /* Adjust button padding for mobile */
-    font-size: 0.9em; /* Slightly smaller font size for buttons */
+    padding: 0.5em 1em;
+    font-size: 0.9em;
   }
 }
 
 @media (max-width: 480px) {
   body {
-    padding: 0.5rem; /* Reduce padding for very small screens */
+    padding: 0.5rem;
   }
 
   h1 {
-    font-size: 1.8em; /* Smaller font size for very small screens */
+    font-size: 1.8em;
   }
 
   button {
-    padding: 0.4em 0.8em; /* Adjust button padding for smaller screens */
-    font-size: 0.8em; /* Further decrease the button font size */
+    padding: 0.4em 0.8em;
+    font-size: 0.8em;
   }
 }

@@ -3,25 +3,25 @@
   justify-content: space-around;
   align-items: center;
   height: 6rem;
-  width: 100%; /* Adjust width to be responsive */
-  max-width: 15rem; /* Set a max-width to avoid it becoming too wide */
+  width: 100%;
+  max-width: 15rem;
   text-align: center;
-  margin: 0 auto; /* Center align the container */
+  margin: 0 auto;
 }
 
 @media (max-width: 768px) {
   .mainservicediv {
     flex-direction: column;
-    height: auto; /* Allow height to adjust based on content */
-    max-width: 12rem; /* Set a max-width for medium screens */
-    padding: 1rem; /* Add padding for better spacing */
+    height: auto;
+    max-width: 12rem;
+    padding: 1rem;
   }
 }
 
 @media (max-width: 480px) {
   .mainservicediv {
-    width: 100%; /* Full width on small screens */
-    max-width: none; /* Remove max-width constraint */
-    padding: 0.5rem; /* Reduce padding for small screens */
+    width: 100%;
+    max-width: none;
+    padding: 0.5rem;
   }
 }

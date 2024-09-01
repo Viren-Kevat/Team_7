@@ -58,9 +58,7 @@ const ShareModal = () => {
               <Instagram />
             </IconButton>
           </Box>
-          {/* <Box sx={{ mt: 2 }}>
-            <ShareButtons />
-          </Box> */}
+         
         </Box>
       </Modal>
     </div>

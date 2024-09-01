@@ -1,6 +1,5 @@
-// src/components/ProductList.js
 import React from 'react';
-import './productlist.css'; // Make sure to include your CSS file
+import './productlist.css'; 
 
 const ProductList = ({ products, addToCart }) => {
   return (

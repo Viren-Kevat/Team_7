@@ -10,14 +10,14 @@ const minicard = ({ symb, h5, p }) => {
             display: 'flex', 
             flexDirection: 'row',
             alignItems: 'center', 
-            height: { xs: 'auto', sm: '8rem' }, // Responsive height
-            margin: { xs: '0.5rem', sm: '2rem' } // Responsive margin
+            height: { xs: 'auto', sm: '8rem' }, 
+            margin: { xs: '0.5rem', sm: '2rem' } 
         }}>
             <CardMedia
                 component="div"
                 sx={{ 
-                    width: { xs: '22%', sm: 151 }, // Responsive width
-                    height: {  sm: 'auto' }, // Responsive height
+                    width: { xs: '22%', sm: 151 }, 
+                    height: {  sm: 'auto' }, 
                 }}
             >
                 {symb}
@@ -35,7 +35,7 @@ const minicard = ({ symb, h5, p }) => {
                     <Typography variant="subtitle1" color="text.secondary" component="div" sx={{ 
                         color: "#fff", 
                         padding: "0 0 0.2rem 0",
-                        fontSize: { xs: '0.875rem', sm: 'inherit' } // Responsive font size
+                        fontSize: { xs: '0.875rem', sm: 'inherit' } 
                     }}>
                         <span>{p}</span>
                     </Typography>

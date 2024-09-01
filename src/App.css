@@ -13,11 +13,10 @@
   margin: 0.5rem;
   text-align: end;
   display: flex;
-  align-items: center; /* Align items vertically */
-  justify-content: flex-end; /* Align items to the end horizontally */
+  align-items: center;
+  justify-content: flex-end;
 }
 
-/* For products page */
 .mainp,
 .mainp2 {
   display: flex;

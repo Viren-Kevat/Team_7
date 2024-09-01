@@ -35,9 +35,9 @@ const ridhi =()=>{
                 
                 <Minicard 
                     symb={<CodeIcon  sx={{fontSize:{
-                        xs: '60px', // For extra-small devices (phones)
-                        sm: '2rem',   // For small devices (tablets)
-                        md: '2.5rem'  // For medium devices and up (desktops)
+                        xs: '60px', 
+                        sm: '2rem',   
+                        md: '2.5rem' 
                         }
                         }}/>}
                     h5={"Programer"}
@@ -45,9 +45,9 @@ const ridhi =()=>{
                 />
                   <Minicard 
                     symb={<LaptopMacIcon  sx={{ fontSize:{
-                        xs: '60px', // For extra-small devices (phones)
-                        sm: '2rem',   // For small devices (tablets)
-                        md: '2.5rem'  // For medium devices and up (desktops)
+                        xs: '60px', 
+                        sm: '2rem',   
+                        md: '2.5rem' 
                         }
                         }}/>}
                     h5={"Web-Developer"}
@@ -55,9 +55,9 @@ const ridhi =()=>{
                 />
                 <Minicard 
                     symb={<PersonIcon  sx={{fontSize:{
-                        xs: '2rem', // For extra-small devices (phones)
-                        sm: '2rem',   // For small devices (tablets)
-                        md: '2.5rem'  // For medium devices and up (desktops)
+                        xs: '2rem', 
+                        sm: '2rem',   
+                        md: '2.5rem' 
                         }
                     }}/>}
                     h5={"Leadership"}

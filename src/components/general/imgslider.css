@@ -41,7 +41,6 @@ a {
   }
 }
 
-/* For tablets and smaller laptops */
 @media (max-width: 768px) {
   .slider {
     height: 30rem;
@@ -61,7 +60,6 @@ a {
   }
 }
 
-/* For mobile devices */
 @media (max-width: 480px) {
   .slider {
     height: 24rem;
