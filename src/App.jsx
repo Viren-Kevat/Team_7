@@ -72,7 +72,7 @@ function App() {
                     src={Brands}/>
             </div>
             <EasterEgg/>
-            {/* <Sequence/> */}
+            
             <Footer/>
           </>
           }
@@ -85,7 +85,7 @@ function App() {
             <Productsection products={products} addToCart={addToCart}/>
             <Footer/>
             <EasterEgg/>
-            {/* <Sequence/> */}
+             
             </>
           }
         />
@@ -96,7 +96,7 @@ function App() {
               <AboutUs/>
               <Footer/>
               <EasterEgg/>
-              {/* <Sequence/> */}
+              
             </>
           }
         />
@@ -107,7 +107,7 @@ function App() {
           <Cart cartItems={cart} removeFromCart={removeFromCart} />
           <Footer/>
           <EasterEgg/>
-          {/* <Sequence/> */}
+          
           </>
           }
         />
@@ -118,7 +118,7 @@ function App() {
           <ContactUs/>
           <Footer/>
           <EasterEgg/>
-          {/* <Sequence/> */}
+          
           </>
           }
         />
@@ -129,7 +129,7 @@ function App() {
           <SignIn/>
           <Footer/>
           <EasterEgg/>
-          {/* <Sequence/> */}
+          
           </>
           }
         />
@@ -141,7 +141,7 @@ function App() {
           <Viren/>
           <Footer/>
           <EasterEgg/>
-          {/* <Sequence/> */}
+          
           </>
           }
           />
@@ -152,7 +152,7 @@ function App() {
           <Ridhi/>
           <Footer/>
           <EasterEgg/>
-          {/* <Sequence/> */}
+          
           </>
           }
           />
@@ -163,7 +163,7 @@ function App() {
           <Savan/>
           <Footer/>
           <EasterEgg/>
-          {/* <Sequence/> */}
+          
           </>
           }
           />
