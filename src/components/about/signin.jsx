@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './signin.css';
 
-const signIn = () => {
+const SignIn = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
@@ -11,28 +11,36 @@ const signIn = () => {
     console.log('Password:', password);
   };
 
-  const emailchange = (e)=>{
-    setEmail(e.target.value)
-  }
+  const emailchange = (e) => {
+    setEmail(e.target.value);
+  };
 
-  const passwordchange =(e)=>{
-    setPassword(e.target.value)
-  }
+  const passwordchange = (e) => {
+    setPassword(e.target.value);
+  };
 
   return (
     <div className="sign-in-container">
       <h2 className="sign-in-title">Sign In</h2>
-      <form onSubmit={handleSubmit} className="sign-in-form" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+      <form
+        onSubmit={handleSubmit}
+        className="sign-in-form"
+        name="sign-in"
+        method="POST"
+        data-netlify="true"
+      >
+        <input type="hidden" name="form-name" value="sign-in" />
         <div className="form-group">
           <label htmlFor="email">Email:</label>
           <input
             type="email"
             id="email"
+            name="email" 
             value={email}
             onChange={emailchange}
             required
             placeholder="Enter your email"
-            style={{ width: "-webkit-fill-available"}}
+            style={{ width: "-webkit-fill-available" }}
           />
         </div>
         <div className="form-group">
@@ -40,19 +48,24 @@ const signIn = () => {
           <input
             type="password"
             id="password"
+            name="password"
             value={password}
             onChange={passwordchange}
             required
             placeholder="Enter your password"
-            style={{ width: "-webkit-fill-available"}}
-
+            style={{ width: "-webkit-fill-available" }}
           />
         </div>
         <button type="submit" className="sign-in-button">Sign In</button>
-        <input type="hidden" name="sign-in-form" value="contact" />
+        
+        <p className="hidden">
+          <label>
+            Don’t fill this out if you're human: <input name="bot-field" />
+          </label>
+        </p>
       </form>
     </div>
   );
 };
 
-export default signIn;
+export default SignIn;
