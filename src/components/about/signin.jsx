@@ -26,8 +26,6 @@ const SignIn = () => {
         onSubmit={handleSubmit}
         className="sign-in-form"
         name="sign-in"
-        method="POST"
-        data-netlify="true"
       >
         <input type="hidden" name="form-name" value="sign-in" />
         <div className="form-group">
@@ -57,12 +55,6 @@ const SignIn = () => {
           />
         </div>
         <button type="submit" className="sign-in-button">Sign In</button>
-        
-        <p className="hidden">
-          <label>
-            Don’t fill this out if you're human: <input name="bot-field" />
-          </label>
-        </p>
       </form>
     </div>
   );
