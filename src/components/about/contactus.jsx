@@ -30,7 +30,16 @@ const ContactUs = () => {
     <div className="contact-us-section">
       <h2>Contact Us</h2>
       <p>If you have any questions, feel free to reach out to us!</p>
-      <form onSubmit={handleSubmit} className="contact-us-form">
+      <form 
+        onSubmit={handleSubmit} 
+        className="contact-us-form" 
+        name="contact" 
+        method="POST" 
+        data-netlify="true"
+      >
+        {/* This hidden input is required for Netlify form submission */}
+        <input type="hidden" name="form-name" value="contact" />
+        
         <div className="form-group">
           <label htmlFor="name">Name:</label>
           <input
