@@ -18,24 +18,22 @@ const ContactUs = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-  const form = e.target;
-
-  fetch("/", {
-    method: "POST",
-    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    body: new URLSearchParams(formData).toString(),
-  })
-    .then(() => {
-      console.log("Form successfully submitted");
-      alert("Form submitted successfully!");
+  
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString(),
     })
-    .catch((error) => {
-      console.error("Form submission error:", error);
-      alert("Form submission failed!");
-    });
+      .then(() => {
+        console.log("Form successfully submitted");
+        window.location.href = "/thankyou"; // Redirect to a custom thank you page
+      })
+      .catch((error) => {
+        console.error("Form submission error:", error);
+        alert("Form submission failed!");
+      });
   };
-
+  
   return (
     <div className="contact-us-section">
       <h2>Contact Us</h2>
@@ -45,7 +43,7 @@ const ContactUs = () => {
         data-netlify="true"
         onSubmit={handleSubmit}
       >
-        <input type="hidden" name="form-name" value="contact" />
+        {/* <input type="hidden" name="form-name" value="contact" /> */}
 
         <div className="form-group">
           <label htmlFor="name">Your Name:</label>
