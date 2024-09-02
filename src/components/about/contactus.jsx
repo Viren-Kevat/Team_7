@@ -19,21 +19,20 @@ const ContactUs = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // This will enable Netlify to handle the form submission
-    const form = e.target;
+  const form = e.target;
 
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(formData).toString(),
+  fetch("/", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: new URLSearchParams(formData).toString(),
+  })
+    .then(() => {
+      console.log("Form successfully submitted");
+      alert("Form submitted successfully!");
     })
-      .then(() => console.log("Form successfully submitted"))
-      .catch((error) => alert(error));
-
-    setFormData({
-      name: "",
-      email: "",
-      message: "",
+    .catch((error) => {
+      console.error("Form submission error:", error);
+      alert("Form submission failed!");
     });
   };
 
