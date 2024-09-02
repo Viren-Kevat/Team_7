@@ -122,7 +122,7 @@ function App() {
           </>
           }
         />
-        <Route path="/thankyou" element={<ThankYou />} />
+        <Route path="/thankyou" element={<Thankyou />} />
         <Route
           path="/signin"
           element={
