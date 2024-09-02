@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./contactus.css"; // Assuming you have some basic styles
+import "./contactus.css";
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
@@ -18,35 +18,21 @@ const ContactUs = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-  
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: new URLSearchParams(formData).toString(),
-    })
-      .then(() => {
-        console.log("Form successfully submitted");
-        window.location.href = "/thankyou"; // Redirect to a custom thank you page
-      })
-      .catch((error) => {
-        console.error("Form submission error:", error);
-        alert("Form submission failed!");
-      });
+    console.log("Form data submitted:", formData);
+    setFormData({
+      name: "",
+      email: "",
+      message: "",
+    });
   };
-  
+
   return (
     <div className="contact-us-section">
       <h2>Contact Us</h2>
-      <form
-        name="contact"
-        method="POST"
-        data-netlify="true"
-        onSubmit={handleSubmit}
-      >
-        {/* <input type="hidden" name="form-name" value="contact" /> */}
-
+      <p>If you have any questions, feel free to reach out to us!</p>
+      <form onSubmit={handleSubmit} className="contact-us-form">
         <div className="form-group">
-          <label htmlFor="name">Your Name:</label>
+          <label htmlFor="name">Name:</label>
           <input
             type="text"
             id="name"
@@ -56,9 +42,8 @@ const ContactUs = () => {
             required
           />
         </div>
-
         <div className="form-group">
-          <label htmlFor="email">Your Email:</label>
+          <label htmlFor="email">Email:</label>
           <input
             type="email"
             id="email"
@@ -68,9 +53,8 @@ const ContactUs = () => {
             required
           />
         </div>
-
         <div className="form-group">
-          <label htmlFor="message">Your Message:</label>
+          <label htmlFor="message">Message:</label>
           <textarea
             id="message"
             name="message"
@@ -79,8 +63,7 @@ const ContactUs = () => {
             required
           />
         </div>
-
-        <button type="submit" className="submit-button">Send</button>
+        <button type="submit" className="submit-button">Submit</button>
       </form>
     </div>
   );

@@ -1,6 +1,6 @@
 import React, { useState} from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import {Box,Mainbox,Mainservice,AboutUs,Ridhi,Savan,Viren,Base,Cart,Footer,Header,Hero,ContactUs,SignIn,Thankyou,ScrollTop,EasterEgg} from "./components"
+import {Box,Mainbox,Mainservice,AboutUs,Ridhi,Savan,Viren,Base,Cart,Footer,Header,Hero,ContactUs,SignIn,ScrollTop,EasterEgg} from "./components"
 import Productsection from './productsection.jsx';
 import Brands from "./img/famous_brands_3.jpeg"
 import State from './state.jsx';
@@ -122,7 +122,6 @@ function App() {
           </>
           }
         />
-        <Route path="/thankyou" element={<Thankyou />} />
         <Route
           path="/signin"
           element={
