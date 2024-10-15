@@ -25,10 +25,10 @@ const Header = () => {
             <ShoppingCartCheckoutIcon sx={{ verticalAlign: "middle" }} />
           </h1>
         </div>
-        <ul className={navbar-links ${isOpen ? "active" : ""}}>
+        <ul className={`navbar-links ${isOpen ? "active" : ""}`}>
           {navLinks.map((page, index) => (
             <li key={index}>
-              <Link to={/${page.toLowerCase()}} onClick={toggleMenu}>
+              <Link to={`/${page.toLowerCase()}`} onClick={toggleMenu}>
                 {page}
               </Link>
             </li>
