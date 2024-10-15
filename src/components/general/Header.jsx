@@ -1,46 +1,32 @@
-import React, { useState, useCallback } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import "./header.css";
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import ShoppingCartCheckoutIcon from '@mui/icons-material/ShoppingCartCheckout';
-import MenuIcon from '@mui/icons-material/Menu';
-import CloseIcon from '@mui/icons-material/Close';
-import "./header.css"; // For additional custom styles
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  // Using useCallback to memoize the toggleMenu function
-  const toggleMenu = useCallback(() => {
-    setIsOpen(prev => !prev);
-  }, []);
-
-  const navLinks = ['Home', 'Products', 'Cart', 'About', 'Contact'];
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
 
   return (
     <header>
       <nav className="navbar">
         <div className="navbar-logo">
-          <h1>
-            Team 7
-            <ShoppingCartCheckoutIcon sx={{ verticalAlign: "middle" }} />
-          </h1>
+          <h1>Team 7<ShoppingCartCheckoutIcon/></h1>
         </div>
         <ul className={`navbar-links ${isOpen ? "active" : ""}`}>
-          {navLinks.map((page, index) => (
-            <li key={index}>
-              <Link to={`/${page.toLowerCase()}`} onClick={toggleMenu}>
-                {page}
-              </Link>
-            </li>
-          ))}
-          <li>
-            <Link to="/signin" onClick={toggleMenu}>
-              <AccountCircleIcon sx={{ fontSize: 40 }} />
-            </Link>
-          </li>
+        <li><Link to="/">Home</Link></li>
+          <li><Link to="/products">Products</Link></li>
+          <li><Link to="/cart">Cart</Link></li>
+          <li><Link to="/aboutus">About</Link></li>
+          <li><Link to="/contactus">Contact</Link></li>
+          <li><Link to="/signin" sx={{fontSize: 60 }}><AccountCircleIcon/></Link></li>
         </ul>
         <div className="navbar-toggle" onClick={toggleMenu}>
-          {isOpen ? <CloseIcon sx={{ fontSize: 40 }} /> : <MenuIcon sx={{ fontSize: 40 }} />}
+          <span className="navbar-toggle-icon">&#9776;</span>
         </div>
       </nav>
     </header>
