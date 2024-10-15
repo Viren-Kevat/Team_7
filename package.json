@@ -1,9 +1,9 @@
 {
   "name": "team-7",
   "private": true,
-  "version": "1.0.0", // Updated version
+  "version": "1.0.0", 
   "type": "module",
-  "main": "src/index.js", // Specify your main entry point
+  "main": "src/index.js", 
   "scripts": {
     "dev": "vite --host",
     "build": "vite build",
