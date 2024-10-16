@@ -4,17 +4,23 @@ import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import ShoppingCartCheckoutIcon from '@mui/icons-material/ShoppingCartCheckout';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
-import "./header.css"; // For additional custom styles
+import "./header.css"; // Custom styles
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  // Using useCallback to memoize the toggleMenu function
+  // Memoize toggleMenu function using useCallback
   const toggleMenu = useCallback(() => {
-    setIsOpen(prev => !prev);
+    setIsOpen((prev) => !prev);
   }, []);
 
-  const navLinks = ['Home', 'Products', 'Cart', 'About', 'Contact'];
+  const navLinks = [
+    { name: 'Home', path: '/' },
+    { name: 'Products', path: '/products' },
+    { name: 'Cart', path: '/cart' },
+    { name: 'About', path: '/about' },
+    { name: 'Contact', path: '/contact' }
+  ];
 
   return (
     <header>
@@ -26,10 +32,10 @@ const Header = () => {
           </h1>
         </div>
         <ul className={`navbar-links ${isOpen ? "active" : ""}`}>
-          {navLinks.map((page, index) => (
+          {navLinks.map((link, index) => (
             <li key={index}>
-              <Link to={`/${page.toLowerCase()}`} onClick={toggleMenu}>
-                {page}
+              <Link to={link.path} onClick={toggleMenu}>
+                {link.name}
               </Link>
             </li>
           ))}
