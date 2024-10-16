@@ -18,8 +18,8 @@ const Header = () => {
     { name: 'Home', path: '/' },
     { name: 'Products', path: '/products' },
     { name: 'Cart', path: '/cart' },
-    { name: 'About', path: '/about' },
-    { name: 'Contact', path: '/contact' }
+    { name: 'About', path: '/aboutus' },
+    { name: 'Contact', path: '/contactus' }
   ];
 
   return (
