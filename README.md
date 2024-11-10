@@ -24,7 +24,7 @@
 <p>To run this project locally, follow these steps:</p>
 <ol>
   <li>Clone the repository:
-    <pre><code>git clone https://github.com/your-username/online-shopping-app.git</code></pre>
+    <pre><code>git clone https://github.com/viren-kevat/online-shopping-app.git</code></pre>
   </li>
   <li>Install dependencies:
     <pre><code>npm install</code></pre>
