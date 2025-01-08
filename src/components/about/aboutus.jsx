@@ -35,7 +35,7 @@ const AboutUs = () => {
             <div className="team">
                     <Member h3={"Virenkumar Vijay Kevat"} p={"Lead Developer"} src={Viren} url={"/viren"}/>
                     <Member h3={"Ridhdhi Ghanshyambhai Jogani"} p={"Chief Marketing Officer"} src={Ridhi} url={"/ridhi"}/>
-                    <Member h3={"Savan Kirtibhai Kansagara"} p={"Developer"} src={Savan} url={"/savan"}/>        
+                    <Member h3={"Savan Kirtibhai Kansagara"} p={"Social-media Handler"} src={Savan} url={"/savan"}/>        
             </div>
        </div> 
     </div>
