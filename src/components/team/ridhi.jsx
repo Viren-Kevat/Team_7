@@ -17,11 +17,7 @@ const ridhi =()=>{
             <div className="textcontainerr">
             <span><h1>Chief Marketing Manager</h1></span>                
                 
-                <p>
-                I am Developer
-                <br /><br />
-                <span>I make the Complex Simple</span>
-                </p>
+                
             </div>
             </div>
             <div className="maincard">
