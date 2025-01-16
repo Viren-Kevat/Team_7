@@ -15,8 +15,8 @@ const ridhi =()=>{
         <>
            <div className="heror">
             <div className="textcontainerr">
-            <span><h1>UI/UX Designer</h1></span>                
-                <span><h1>Web Developer</h1></span>
+            <span><h1>Chief Marketing Manager</h1></span>                
+                
                 <p>
                 I am Developer
                 <br /><br />
